@@ -1,0 +1,83 @@
+[{
+  "spec_id": 819,
+  "original_price": 59.00,
+  "price": 59.00,
+  "product_link": "",
+  "shopid": 1250
+}, {
+  "spec_id": 1007,
+  "original_price": 299.00,
+  "price": 299.00,
+  "product_link": "",
+  "shopid": 584
+}, {
+  "spec_id": 995,
+  "original_price": 29.00,
+  "price": 29.00,
+  "product_link": "",
+  "shopid": 625
+}, {
+  "spec_id": 750,
+  "original_price": 99.00,
+  "price": 99.00,
+  "product_link": "",
+  "shopid": 1253
+}, {
+  "spec_id": 1006,
+  "original_price": 99.00,
+  "price": 99.00,
+  "product_link": "",
+  "shopid": 714
+}, {
+  "spec_id": 705,
+  "original_price": 59.00,
+  "price": 59.00,
+  "product_link": "",
+  "shopid": 626
+}, {
+  "spec_id": 1035,
+  "original_price": 2999.00,
+  "price": 2699.00,
+  "product_link": "nubiaredmagic/red8gb128gb",
+  "shopid": 1226
+
+}, {
+  "spec_id": 1003,
+  "original_price": 1799.00,
+  "price": 1799.00,
+  "product_link": "nubiaz18mini/blue6gb64gb",
+  "shopid": 1225
+
+}, {
+  "spec_id": 935,
+  "original_price": 2699.00,
+  "price": 2499.00,
+  "product_link": "nubiaz17s/black6gb64gb",
+  "shopid": 1039
+}, {
+  "spec_id": 882,
+  "original_price": 2499.00,
+  "price": 2299.00,
+  "product_link": "nubiaZ17/black",
+  "shopid": 796
+}, {
+  "spec_id": 983,
+  "original_price": 1299.00,
+  "price": 1099.00,
+  "product_link": "nubiav18/black4gb64gb",
+  "shopid": 1005
+}, {
+  "spec_id": 914,
+  "original_price": 3399.00,
+  "price": 2699.00,
+  "product_link": "nubiaZ17/red128gb",
+  "shopid": 797
+
+}, {
+  "spec_id": 1020,
+  "original_price": 69.00,
+  "price": 69.00,
+  "product_link": "",
+  "shopid": 1254
+
+}]

@@ -1,0 +1,64 @@
+.home {
+  .header-home {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: none;
+    background: #282828;
+
+    .left {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      .logo {
+        display: table-cell;
+        padding-top: 0;
+        padding-bottom: 0;
+        vertical-align: middle;
+        padding: .45rem .46rem;
+
+        span {
+          display: inline-block;
+          color: #464646;
+          width: 4.26rem;
+        }
+
+        img {
+          width: 100%;
+          display: block;
+          max-height: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .tit {
+      text-align: center;
+      height: 60px;
+    }
+
+
+    .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 1em 0 0;
+      height: 1.6rem;
+      line-height: 1.6rem;
+      width: 2.08rem;
+      text-align: center;
+      background: #e0523a;
+      margin-right: .32rem;
+      padding: 0;
+
+      .login-in {
+        font-size: .85rem;
+        color: #fff;
+      }
+    }
+
+  }
+}
