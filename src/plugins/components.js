@@ -1,5 +1,5 @@
 // mint-ui UI
-import {Button, Tabbar, TabItem} from 'mint-ui'
+import {Button, Tabbar, TabItem, Swipe, SwipeItem} from 'mint-ui'
 
 // 字体图标
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -13,4 +13,6 @@ export default (Vue) => {
   Vue.component(Button.name, Button)
   Vue.component(Tabbar.name, Tabbar)
   Vue.component(TabItem.name, TabItem)
+  Vue.component(Swipe.name, Swipe)
+  Vue.component(SwipeItem.name, SwipeItem)
 }

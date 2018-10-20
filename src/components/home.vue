@@ -13,8 +13,17 @@
         </a>
       </div>
     </div>
-    <div class="gallery"></div>
-    <div class="advertisement"></div>
+    <!-- <mt-swipe class="gallery" :auto="6000">
+      <mt-swipe-item class="nub-item" :key="item.id" v-for="item in data[501]">
+        <a href=""></a>
+        <img :src="baseUrl+item.small_image" alt="">
+      </mt-swipe-item>
+    </mt-swipe> -->
+    <div class="advertisement">
+      <!-- <div class="nub-item" v-for="item in data[501]" :key="item.id">
+          <img :src="baseUrl+item.small_image" alt="">
+      </div> -->
+    </div>
     <div class="list phone"></div>
     <div class="list other"></div>
   </div>
@@ -25,17 +34,29 @@ export default {
   name: 'home',
   data () {
     return {
+      baseUrl:'https://oss.static.nubia.cn/',
       shopname:'nubia商城',
       data:[]
     }
   },
   created () {
-    this.$axios.get('/api/block?pageType=5').then( x => {
-      if (x.data) {
-      this.data = x.data.data
-      console.log(this.data);
+    // this.$axios.get('/api/block?pageType=5').then( x => {
+    //   if (x.data) {
+    //   this.data = x.data.data
+    //   console.log(this.data[501]);
+    //   }
+    // })
+    console.log(44)
+    this.$axios.get('/api/show/page/catePhone').then( x => {
+      let index = x.data.lastIndexOf('code')-2;
+      let data = x.data.slice(index);
+      data = JSON.parse(data);
 
-      }
+      console.log(111,data);
+      // if (x.data) {
+      // this.data = x.data
+      // console.log(this.data);
+      // }
     })
   }
 
