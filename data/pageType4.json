@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "request_tag": "8c2757cd-1b1f-46dc-ab17-c33e5ccd3732",
+  "data": {
+    "401": [{
+      "id": 890,
+      "title": "降噪耳机",
+      "sub_title": "",
+      "page_type": 4,
+      "big_image": "blockimage/151504564082.jpg",
+      "small_image": "blockimage/151504564054.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/product.php?sid\u003d951\u0026id\u003d680",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }],
+    "402": []
+  }
+}

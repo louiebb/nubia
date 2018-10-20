@@ -19,5 +19,6 @@ export default {
 <style>
 #app {
   height: 100%;
+  font-family: "Microsoft Yahei","微软雅黑",Arial,Helvetica,sans-serif;
 }
 </style>
