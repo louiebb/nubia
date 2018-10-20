@@ -1,0 +1,330 @@
+{
+  "code": 0,
+  "request_tag": "95a0c53e-b297-454c-b30f-26ed7e925f70",
+  "data": {
+    "801": [{
+      "id": 1206,
+      "title": "Z18",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/153613775512.png",
+      "small_image": "blockimage/15361377557.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz18",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1036,
+        "original_price": 2799.00,
+        "price": 2799.00,
+        "product_link": "nubiaz18/black6gb64gb",
+        "sale_point": {
+          "sale_point": "left",
+          "block_image_icon": {
+            "is_need": true,
+            "text": "新品",
+            "color": "#e60012"
+          }
+        }
+      }
+    }, {
+      "id": 1207,
+      "title": "红魔电竞游戏手机",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/153629848589.png",
+      "small_image": "blockimage/153629848538.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaredmagic",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1035,
+        "original_price": 2999.00,
+        "price": 2699.00,
+        "product_link": "nubiaredmagic/red8gb128gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 1043,
+      "title": "Z18mini",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/153690693477.png",
+      "small_image": "blockimage/153690693445.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaZ18mini",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1022,
+        "original_price": 2099.00,
+        "price": 2099.00,
+        "product_link": "nubiaz18mini/blue6gb128gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 1004,
+      "title": "V18 全面屏",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/152152399040.png",
+      "small_image": "blockimage/152152399030.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiav18",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 983,
+        "original_price": 1299.00,
+        "price": 1099.00,
+        "product_link": "nubiav18/black4gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 867,
+      "title": "Z17S全面屏",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/150779043916.png",
+      "small_image": "blockimage/150779044081.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17s",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 935,
+        "original_price": 2699.00,
+        "price": 2499.00,
+        "product_link": "nubiaz17s/black6gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 868,
+      "title": "Z17miniS小牛8",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/150779051631.png",
+      "small_image": "blockimage/150779051689.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17minis",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 938,
+        "original_price": 1499.00,
+        "price": 1299.00,
+        "product_link": "nubiaz17minis/black6gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 706,
+      "title": "Z17 旗舰版",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/150112378146.png",
+      "small_image": "blockimage/150112378262.png",
+      "file_path": "",
+      "link": "http://www.nubia.com/nubiaz17",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 882,
+        "original_price": 2499.00,
+        "price": 2299.00,
+        "product_link": "nubiaZ17/black",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 996,
+      "title": "N3",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/152116389431.png",
+      "small_image": "blockimage/152116389452.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubian3",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 981,
+        "original_price": 1799.00,
+        "price": 1599.00,
+        "product_link": "nubian3/black4gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 664,
+      "title": "Z17mini",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/149750591139.png",
+      "small_image": "blockimage/149750591120.png",
+      "file_path": "",
+      "link": "http://www.nubia.com/nubiaz17mini",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 854,
+        "original_price": 1499.00,
+        "price": 1099.00,
+        "product_link": "nubiaz17mini/whitegold4g",
+        "sale_point": {
+          "sale_point": "left",
+          "block_image_icon": {
+            "is_need": true,
+            "text": "直降400",
+            "color": "#e60012"
+          }
+        }
+      }
+    }, {
+      "id": 665,
+      "title": "Z11",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/149622411591.png",
+      "small_image": "blockimage/149622411546.png",
+      "file_path": "",
+      "link": "http://www.nubia.com/nubiaz11",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 776,
+        "original_price": 2299.00,
+        "price": 1999.00,
+        "product_link": "nubiaz11/whitegold",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 752,
+      "title": "N2",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/149914648730.png",
+      "small_image": "blockimage/149914648717.png",
+      "file_path": "",
+      "link": "http://shop.nubia.com/nubian2",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 827,
+        "original_price": 1799.00,
+        "price": 1599.00,
+        "product_link": "nubian2/black64g",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 774,
+      "title": "M2 畅玩版",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/150149235598.png",
+      "small_image": "blockimage/15014923554.png",
+      "file_path": "",
+      "link": "http://www.nubia.com/nubiam2_fluency",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1256,
+      "title": "M3",
+      "sub_title": "",
+      "page_type": 8,
+      "big_image": "blockimage/153734706677.png",
+      "small_image": "blockimage/153734706659.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaM3",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }]
+  }
+}

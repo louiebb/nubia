@@ -11,9 +11,13 @@ import 'normalize.css'
 import './style/common.scss'
 // px2rem
 import 'lib-flexible'
+
+// 数据交互
+import axios from 'axios'
 Vue.use(components)
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 /* eslint-disable no-new */
 new Vue({

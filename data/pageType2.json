@@ -1,0 +1,551 @@
+{
+  "code": 0,
+  "request_tag": "75dcf089-9282-4a64-bd57-c5a599155e49",
+  "data": {
+    "208": [],
+    "209": [{
+      "id": 1223,
+      "title": "Z18无边水滴屏",
+      "sub_title": "无边水滴屏，AI新旗舰",
+      "page_type": 2,
+      "big_image": "blockimage/153671887661.jpg",
+      "small_image": "blockimage/153671887612.jpg",
+      "file_path": "https://oss.static.nubia.cn/upload/5b8f446b8ce5582.mp4",
+      "link": "",
+      "media_type": 2,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1037,
+        "original_price": 3299.00,
+        "price": 3299.00,
+        "product_link": "nubiaz18/black8gb128gb",
+        "sale_point": {
+          "sale_point": "left",
+          "block_image_icon": {
+            "is_need": true,
+            "text": "新品",
+            "color": "#e60012"
+          }
+        }
+      }
+    }, {
+      "id": 1074,
+      "title": "红魔电竞游戏手机",
+      "sub_title": "不红魔 不成活",
+      "page_type": 2,
+      "big_image": "blockimage/152420326146.jpg",
+      "small_image": "blockimage/152420326115.jpg",
+      "file_path": "https://oss.static.nubia.cn/upload/5ad82f9a2e98880.mp4",
+      "link": "",
+      "media_type": 2,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1023,
+      "title": "V18 千元全面屏",
+      "sub_title": "6吋全面屏，千元长续航",
+      "page_type": 2,
+      "big_image": "blockimage/15217825529.jpg",
+      "small_image": "blockimage/15217834192.jpg",
+      "file_path": "https://oss.static.nubia.cn/upload/5ab30151ca1a497.mp4",
+      "link": "",
+      "media_type": 2,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 983,
+        "original_price": 1299.00,
+        "price": 1099.00,
+        "product_link": "nubiav18/black4gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 881,
+      "title": "Z17S 全面屏 无边框",
+      "sub_title": "四曲面炫光玻璃机身",
+      "page_type": 2,
+      "big_image": "blockimage/150881099140.jpg",
+      "small_image": "blockimage/150881099192.jpg",
+      "file_path": "https://oss.static.nubia.cn/upload/59e95ff4c0d0079.mp4",
+      "link": "",
+      "media_type": 2,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 935,
+        "original_price": 2699.00,
+        "price": 2499.00,
+        "product_link": "nubiaz17s/black6gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }],
+    "210": [],
+    "211": [{
+      "id": 1132,
+      "title": "红魔向量保护套",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/152904366432.jpg",
+      "small_image": "blockimage/152905026365.jpg",
+      "file_path": "",
+      "link": "https://shop.nubia.com/product/737/1030",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }],
+    "201": [{
+      "id": 1049,
+      "title": "nubia商城",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/152343385828.jpg",
+      "small_image": "blockimage/152343385867.jpg",
+      "file_path": "",
+      "link": "http://ui.nubia.cn/app/app/33",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1007,
+      "title": "V18 全面屏",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/152152529839.jpg",
+      "small_image": "blockimage/152152529864.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiav18",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 869,
+      "title": "Z17S预约",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/15077908824.jpg",
+      "small_image": "blockimage/151062078388.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17s",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }],
+    "202": [{
+      "id": 1224,
+      "title": "红魔电竞游戏手机",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e不红魔 不成活\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/153674218281.jpg",
+      "small_image": "blockimage/153674218246.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaredmagic/red8gb128gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1035,
+        "original_price": 2999.00,
+        "price": 2699.00,
+        "product_link": "nubiaredmagic/red8gb128gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 1076,
+      "title": "Z17miniS 深海蓝",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e3D曲面玻璃机身\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/153144557967.jpg",
+      "small_image": "blockimage/153144557971.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17minis/deepblack6gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 938,
+        "original_price": 1499.00,
+        "price": 1299.00,
+        "product_link": "nubiaz17minis/black6gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 678,
+      "title": "Z17S黑金",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e全面屏无边框 \u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/151176114491.jpg",
+      "small_image": "blockimage/15117611441.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17s/black6gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 935,
+        "original_price": 2699.00,
+        "price": 2499.00,
+        "product_link": "nubiaz17s/black6gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 677,
+      "title": "Z17 无边框 曜石黑",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e骁龙835处理器\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/151055869429.jpg",
+      "small_image": "blockimage/151055869460.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaZ17/black",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 882,
+        "original_price": 2499.00,
+        "price": 2299.00,
+        "product_link": "nubiaZ17/black",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }],
+    "204": [{
+      "id": 689,
+      "title": "努比亚游戏背包",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/152542345789.png",
+      "small_image": "blockimage/152542345711.png",
+      "file_path": "",
+      "link": "https://shop.nubia.com/product/719/1005",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1005,
+        "original_price": 199.00,
+        "price": 199.00,
+        "product_link": "",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 690,
+      "title": "努比亚红魔游戏T恤",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/152542355255.png",
+      "small_image": "blockimage/152542355288.png",
+      "file_path": "",
+      "link": "https://shop.nubia.com/product/720/1009",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1006,
+        "original_price": 99.00,
+        "price": 99.00,
+        "product_link": "",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 692,
+      "title": "红魔电竞游戏耳机",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/152575991735.png",
+      "small_image": "blockimage/152575991773.png",
+      "file_path": "",
+      "link": "https://shop.nubia.com/product/721/1007",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 1007,
+        "original_price": 299.00,
+        "price": 299.00,
+        "product_link": "",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 688,
+      "title": "努比亚蓝牙耳机",
+      "sub_title": "时尚配色",
+      "page_type": 2,
+      "big_image": "blockimage/150630773656.jpg",
+      "small_image": "blockimage/15063077369.jpg",
+      "file_path": "",
+      "link": "https://shop.nubia.com/product/665/928",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 932,
+        "original_price": 79.00,
+        "price": 79.00,
+        "product_link": "",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 691,
+      "title": "圈铁耳机",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/150450759595.jpg",
+      "small_image": "blockimage/150450759557.jpg",
+      "file_path": "",
+      "link": "https://shop.nubia.com/product/554/750",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 750,
+        "original_price": 99.00,
+        "price": 99.00,
+        "product_link": "",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }],
+    "206": [{
+      "id": 1270,
+      "title": "红魔6+64直降200",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/153984249261.jpg",
+      "small_image": "blockimage/153984249264.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaredmagic/black6gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1263,
+      "title": "Z18梵高星空典藏版购买",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/153785742954.jpg",
+      "small_image": "blockimage/153785743090.jpg",
+      "file_path": "",
+      "link": "https://shop.nubia.com/buy/nubiaz18/sky8gb128gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1237,
+      "title": "z18抢购9.18",
+      "sub_title": "",
+      "page_type": 2,
+      "big_image": "blockimage/153933632295.jpg",
+      "small_image": "blockimage/153933632286.jpg",
+      "file_path": "",
+      "link": "https://shop.nubia.com/buy/nubiaz18/black8gb128gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }],
+    "207": [{
+      "id": 1017,
+      "title": "V18 曜石黑",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e6吋全面屏\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/15217046473.jpg",
+      "small_image": "blockimage/152170464783.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiav18/black4gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 983,
+        "original_price": 1299.00,
+        "price": 1099.00,
+        "product_link": "nubiav18/black4gb64gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 732,
+      "title": "Z17mini 香槟金 6GB+64GB",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e前置1600万美颜\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/152359718237.png",
+      "small_image": "blockimage/152359718281.png",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17mini/whitegold6g",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 855,
+        "original_price": 1599.00,
+        "price": 1199.00,
+        "product_link": "nubiaz17mini/whitegold6g",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 730,
+      "title": "Z17 旭日金",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e骁龙835处理器\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/151263637999.jpg",
+      "small_image": "blockimage/151263637992.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaz17/gold",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 883,
+        "original_price": 2499.00,
+        "price": 2299.00,
+        "product_link": "nubiaz17/gold",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }, {
+      "id": 685,
+      "title": "Z17 6GB+128GB",
+      "sub_title": "\u003cspan style\u003d\"color:#FF4D4D\"\u003e\u003c/span\u003e",
+      "page_type": 2,
+      "big_image": "blockimage/151986933858.jpg",
+      "small_image": "blockimage/15198693388.jpg",
+      "file_path": "",
+      "link": "https://www.nubia.com/nubiaZ17/red128gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0,
+      "block_products": {
+        "spec_id": 914,
+        "original_price": 3399.00,
+        "price": 2699.00,
+        "product_link": "nubiaZ17/red128gb",
+        "sale_point": {
+          "sale_point": "",
+          "block_image_icon": {
+            "is_need": false,
+            "text": "",
+            "color": ""
+          }
+        }
+      }
+    }]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "code": 0,
+  "request_tag": "624ea219-add6-47d7-9434-68d440938a24",
+  "data": {
+    "601": [{
+      "id": 1094,
+      "title": "红魔电竞游戏手机",
+      "sub_title": "",
+      "page_type": 6,
+      "big_image": "blockimage/152481742689.jpg",
+      "small_image": "blockimage/152481742631.jpg",
+      "file_path": "",
+      "link": "http://shop.nubia.com/buy/nubiaredmagic/black6gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1093,
+      "title": "Z18mini",
+      "sub_title": "",
+      "page_type": 6,
+      "big_image": "blockimage/152481739330.jpg",
+      "small_image": "blockimage/152481739374.jpg",
+      "file_path": "",
+      "link": "http://shop.nubia.com/buy/nubiaz18mini/black6gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }, {
+      "id": 1092,
+      "title": "V18",
+      "sub_title": "",
+      "page_type": 6,
+      "big_image": "blockimage/152481732267.jpg",
+      "small_image": "blockimage/152481732316.jpg",
+      "file_path": "",
+      "link": "http://shop.nubia.com/buy/nubiav18/black4gb64gb",
+      "media_type": 1,
+      "description": "",
+      "title_position": 0,
+      "content_bg_color": 0
+    }]
+  }
+}
