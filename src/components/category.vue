@@ -74,10 +74,14 @@
 </template>
 
 <script>
+import '../style/sass/catagory.scss'
 export default {
   name: "category",
   data() {
     return {
+      dataPhone:[],
+      dataAcc:[],
+      dataZb:[],
       datalist: [
         {
           imgurl: "./static/img/category/hongmo1.png",
@@ -219,57 +223,38 @@ export default {
 
     };
   },
+   created () {
+    this.$axios.get('/api/show/page/catePhone').then( x => {
+      if (x.data) {
+        let aa;
+      console.log(x.data);
+
+        aa = x.data.replace(/\-|pic\/|\_/g,'');
+        aa = JSON.parse(aa);
+      // this.dataPhone =JSON.parse(x.data)
+      
+      console.log(aa);
+
+      }
+    })
+  },
   methods:{
     showDetail(id){
 				this.$router.push({
           name:'goodDetail',
           params:{id}
         });
-      }
+      },
+    selectGood(){
+      router.push({
+        path: 'goods',
+        query:{goodId:this.goods.id}})
+    }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.mint-header {
-  height: 1.6rem;
-  background-color: #fff;
-  color: #464646;
-  font-size: .69rem;
-}
-/*红魔竞技手机    &   手机     */
-.nub-title {
-  height: 1.6rem;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
-  font-size: .53rem;
-  padding-left:.8rem;
-}
-.nub-title span {
-  height: 1.36rem;
-  line-height: 1.36rem;
-  font-size: .53rem;
-}
-.nub-jingji .nub-jingji-ul {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-  margin:0 .48rem;
-}
-.nub-jingji .nub-jingji-ul li{
-  width: 25%;
-  float: left;
-  margin-top: .69rem;
-  padding-right: 2px;
-  box-sizing: border-box;
-  min-height: 4.16rem;
-  vertical-align: middle;
-      list-style: none;
-}
-.nub-jingji .nub-jingji-ul li img{width:2rem;}
 
-/*间隙*/
-.jianxi{height:3px;background-color:#eeeeee}
 </style>
