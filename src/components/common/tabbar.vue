@@ -57,8 +57,7 @@ export default {
 .tabbar {
   z-index: 999;
   background: #f4f3ef;
-  height: 52px;
-  max-width: 720px;
+  height: 1.386rem;
   margin: 0 auto;
   div.mint-tab-item-label{
     height: 100%;
@@ -67,9 +66,9 @@ export default {
 
 .icon {
   display: block;
-  font-size: 25px;
+  font-size: .666rem;
   text-align: center;
-  height: 30px;
-  line-height: 27px;
+  height: .853rem;
+  line-height: .8rem;
 }
 </style>

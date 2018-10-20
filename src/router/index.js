@@ -5,7 +5,11 @@ import Category from '@/components/category'
 import Discover from '@/components/discover'
 import Cart from '@/components/cart'
 import User from '@/components/user'
+<<<<<<< HEAD
 import Login from '@/components/Login'
+=======
+import GoodDetail from '@/components/GoodDetail'
+>>>>>>> dev
 
 Vue.use(Router)
 export default new Router({
@@ -32,11 +36,19 @@ export default new Router({
   }, {
     path: '/user',
     name: 'user',
+<<<<<<< HEAD
     component: User,
     children: [{
       path: '/login',
       name: 'login',
       component: Login
     }]
+=======
+    component: User
+  }, {
+    path: '/goodDetail',
+    name: 'goodDetail',
+    component: GoodDetail
+>>>>>>> dev
   }]
 })
