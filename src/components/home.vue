@@ -1,5 +1,5 @@
 <template>
-  <div class="home" id="home">
+  <div class="home container" id="home">
     <div class="header-home">
       <div class="left">
         <a href="#" :title="shopname" class="logo">
@@ -20,32 +20,84 @@
       </mt-swipe-item>
     </mt-swipe>
     <div class="advertisement">
-      <!-- <div class="nub-item" v-for="item in data[501]" :key="item.id">
-          <img :src="baseUrl+item.small_image" alt="">
-      </div> -->
+      <div class="box">
+        <div class="left" :key="item.id"  v-for="item in data[502]">
+           <a href="#">
+            <img :src="baseUrl+item.small_image" alt="">
+           </a>
+        </div>
+        <div class="right">
+          <div class="row" :key="item.id"  v-for="item in data[503]">
+            <a href="#">
+              <img :src="baseUrl+item.small_image" alt="">
+            </a>
+          </div>
+          <div class="row" :key="item.id"  v-for="item in data[504]">
+            <a href="#">
+              <img :src="baseUrl+item.small_image" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="list phone"></div>
-    <div class="list other"></div>
+    <nub-ad :adData="{class:'ad',title:'热销机型',data:data[504]}"></nub-ad>
+
+    <nub-list :listData="{class:'phone comm',link:{url:'#',content:'查看更多商品'},data:phone}"></nub-list>
+
+    <nub-ad :adData="{class:'ad',title:'金选配件',data:data[508]}"></nub-ad>
+
+    <nub-list :listData="{class:'accessory comm',link:{url:'#',content:'查看更多配件'},data:accessory}"></nub-list>
   </div>
 </template>
 <script>
 import '../style/sass/home.scss'
+import NubAd from "./common/home/ad"
+import NubList from "./common/home/list"
 export default {
   name: 'home',
   data () {
     return {
       baseUrl:'https://oss.static.nubia.cn/',
       shopname:'nubia商城',
-      data:[]
+      data:{
+        506:[],
+        505:[]
+      },
     }
   },
   created () {
     this.$axios.get('/api/block?pageType=5').then( x => {
       if (x.data) {
       this.data = x.data.data
-      console.log(this.data[501]);
       }
     })
+
+
+  },
+  methods:{
+    getSpecial(obj,num){
+      let phoneList = [];
+      for (let i = 0, len = obj.length; i < len; i+=num) {
+          phoneList.push(obj.slice(i,i+num));
+      }
+      return phoneList;
+    }
+  },
+  computed:{
+    phone:{
+      get(){
+          return this.getSpecial(this.data[506],2);
+      },
+    },
+    accessory:{
+       get(){
+          return this.getSpecial(this.data[505],2);
+      },
+    }
+  },
+  components:{
+    NubAd,
+    NubList
   }
 
 }

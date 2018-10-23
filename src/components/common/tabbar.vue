@@ -1,5 +1,5 @@
 <template>
-  <mt-tabbar class="tabbar" v-model="selected">
+  <mt-tabbar :fixed="true" class="tabbar" v-model="selected">
   <mt-tab-item :id="tab.key" :key="tab.key" v-for="tab in tabs">
     <!-- <img slot="icon" src="../../assets/100x100.png"> -->
     <div class="icon">
@@ -55,6 +55,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .tabbar {
+  max-width: 720px;
+  margin: 0px auto;
   z-index: 999;
   background: #f4f3ef;
   height: 1.386rem;
@@ -68,7 +70,7 @@ export default {
   display: block;
   font-size: .666rem;
   text-align: center;
-  height: .853rem;
-  line-height: .8rem;
+  height: .75rem;
+  line-height: .75rem;
 }
 </style>
