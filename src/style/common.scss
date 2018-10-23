@@ -8,9 +8,24 @@ body {
 .fr{
   float: right;
 }
+.container{
+  overflow-x: hidden;
+  height: 100%;
+  padding-bottom: 1.386rem;
+}
 li,
 img,
 label,
 input {
   vertical-align: middle;
+}
+
+img{
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: black;
 }

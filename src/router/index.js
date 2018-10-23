@@ -6,6 +6,7 @@ import Discover from '@/components/discover'
 import Cart from '@/components/cart'
 import User from '@/components/user'
 import GoodDetail from '@/components/GoodDetail'
+import Login from '@/components/login'
 
 Vue.use(Router)
 export default new Router({
@@ -32,7 +33,12 @@ export default new Router({
   }, {
     path: '/user',
     name: 'user',
-    component: User
+    component: User,
+    children: [{
+      path: '/login',
+      name: 'login',
+      component: Login
+    }]
   }, {
     path: '/goodDetail',
     name: 'goodDetail',

@@ -1,5 +1,6 @@
 // mint-ui UI
 import {Button, Tabbar, TabItem, Header, Cell, Swipe, SwipeItem} from 'mint-ui'
+
 // 字体图标
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faList, faShoppingCart, faUser, faChevronLeft, faEquals } from '@fortawesome/free-solid-svg-icons'
