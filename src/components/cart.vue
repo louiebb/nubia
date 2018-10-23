@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <mt-button type="danger">cart</mt-button>
+
   </div>
 </template>
 

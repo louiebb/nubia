@@ -14,6 +14,7 @@ import 'lib-flexible'
 
 // 数据交互
 import axios from 'axios'
+
 Vue.use(components)
 
 Vue.config.productionTip = false
