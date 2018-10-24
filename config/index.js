@@ -12,8 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
        '/api': {
-         target: 'http://localhost:8081',
-         //  target: 'http://10.3.137.119:8081',
+         //  target: 'http://localhost:8081',
+          target: 'http://10.3.137.119:8081',
          //  target: 'https://m.nubia.com',
          changeOrigin: true,
          pathRewrite: {

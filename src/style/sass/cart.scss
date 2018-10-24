@@ -1,0 +1,14 @@
+.cart{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .top{
+    height: 61px;
+  }
+  .container{
+    background: #ccc;
+  }
+  .bottom {
+    height: 52px;
+  }
+}
