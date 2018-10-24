@@ -43,17 +43,40 @@
     .cuxiao{
         font-size:.48rem;
         margin-top:28px;
+        padding-bottom:8px;
         .zeng{
             border:1px solid rgb(255, 77, 77);
             color:rgb(255, 77, 77);
+            margin:7px;
+            display:inline-block;
+            padding:3px;
         }
         span{
-            font-size:12px;
+            
+            font-size:13px;
+            
         }
     }
     .jianxi-zeng{
         height:1px;
         background-color:#eeeeee;
+    }
+    .address{
+        font-size:14px;
+        .songzhi{
+            padding-top:3px;
+            color:#000;
+        }
+        .choose-right{
+            float:right;
+        }
+        .xianhuo{
+            color:#FF4D4D;
+        }
+        .good-color{
+                margin-top:8px;
+                
+            }
     }
 
 }

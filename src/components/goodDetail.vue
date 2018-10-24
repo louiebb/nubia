@@ -1,5 +1,6 @@
 <template>
-  <div class="goodDetail">
+  <div class="goodDetail flexbox">
+    <div class="container">
     <mt-header title="商品详情">
       <router-link to="/" slot="left">
         <font-awesome-icon icon="chevron-left" />
@@ -43,9 +44,43 @@
          <div>
            <span class="zeng">赠牛豆</span><span> 购买完成可获得与支付金额相同数目的牛豆</span><br>
            <span class="zeng">包邮</span><span>  普通和青铜会员满59、白银满39、黄金以上包邮</span>
+          
          </div>
+
       </div>
-      
+      <!-- 间隙 -->
+      <div class="jianxi"></div>
+      <!-- 送货 -->
+      <div class="address" style="padding:10px;">
+        <div class="songzhi">送至
+          <font-awesome-icon icon="map-marker-alt" />
+          <span>&nbsp;广东省 广州市 荔湾区</span>
+          <font-awesome-icon icon="chevron-right" class="choose-right"/>
+        </div>
+        <div class="xianhuo" style="padding:10px 0;" >
+          <span>现货</span>
+          <span>19:00前下单，预计10月25日12:00点前送达</span>
+        </div>
+      </div>
+      <!-- 间隙 -->
+      <div class="jianxi"></div>
+      <div class="good-canshhu">
+        <div class="goods-color" style="padding:6px 12px;">
+          <div class="good-color">
+            <span style="font-size:16px;">颜色</span>
+          </div>
+          
+          <div>
+            <span style="display:inline-block; padding:3px;border-redius:4px;">曜石黑</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div style="height:1000px;"></div>
+      <div class="bottom"></div>
+      </div>
     
 
     

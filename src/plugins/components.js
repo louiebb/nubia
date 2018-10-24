@@ -2,10 +2,10 @@
 import {Button, Tabbar, TabItem, Header, Cell, Swipe, SwipeItem} from 'mint-ui'
 // 字体图标
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHome, faList, faShoppingCart, faUser, faChevronLeft, faEquals, faShareAlt } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faList, faShoppingCart, faUser, faChevronLeft, faEquals, faShareAlt, faMapMarkerAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // 添加具体的字体图标
-library.add(faHome, faList, faShoppingCart, faUser, faChevronLeft, faEquals, faShareAlt)
+library.add(faHome, faList, faShoppingCart, faUser, faChevronLeft, faEquals, faShareAlt, faMapMarkerAlt, faChevronRight)
 export default (Vue) => {
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component(Button.name, Button)
