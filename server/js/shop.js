@@ -15,11 +15,11 @@ let shopBusiness = {
     if (obj.pageType === '5') {
       sqlshop = `select * from ${shopListTable} where page_type = ${obj.pageType}`
       db.map(sqlshop, sqlblock, function (res) {
-        res.shoplist.forEach(x => {
-          x.block_products = res.block.filter(j => j.shopid === x.id)[0]
+        res.dataOne.forEach(x => {
+          x.block_products = res.dataTwo.filter(j => j.shopid === x.id)[0]
         })
         let arr = {}
-        res.shoplist.forEach(x => {
+        res.dataOne.forEach(x => {
           if (!arr[x.cate_id]) {
             arr[x.cate_id] = [x]
           } else {

@@ -2,7 +2,7 @@ let db = require('../sql/mysqlDB.js')
 let md5 = require('../modules/md5.js')
 let async = require('async')
 // 日期格式化
-// let dateutils = require('date-utils')
+let dateutils = require('date-utils')
 
 // 路由映射表
 // 路由映射规则

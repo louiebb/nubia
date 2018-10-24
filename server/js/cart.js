@@ -5,33 +5,26 @@ let apiResult = require('../modules/ApiResult.js')
 // 路由映射规则
 
 // 数据库表
-let shopListTable = 'shoplist'
-let blockProducts = 'block_products'
-let shopBusiness = {
+let cartTable = 'cart'
+let specInfosTable = 'spec_infos'
+let increaseProductsTable = 'increase_products'
+let cartBusiness = {
   select: function (obj, callback) {
-    let sqlshop = `select * from ${shopListTable}`
-    let sqlblock = `select * from ${blockProducts}`
-    if (obj.pageType === '5') {
-      sqlshop = `select * from ${shopListTable} where page_type = ${obj.pageType}`
-      db.map(sqlshop, sqlblock, function (res) {
-        res.shoplist.forEach(x => {
-          x.block_products = res.block.filter(j => j.shopid === x.id)[0]
-        })
-        let arr = {}
-        res.shoplist.forEach(x => {
-          if (!arr[x.cate_id]) {
-            arr[x.cate_id] = [x]
-          } else {
-            arr[x.cate_id].push(x)
-          }
-        })
-        callback(apiResult(true, arr, null))
-      })
-    } else {
-      db.common(sqlshop, function (res) {
-        callback(res)
-      })
-    }
+    let sqlcart = `select * from ${cartTable} where cart_id = ${548581}`
+    let specInfos = `select * from ${specInfosTable}`
+    let increaseProducts = `select * from ${increaseProductsTable}`
+    db.map(sqlcart, increaseProducts, function (res) {
+      // cart后台接口
+      let data = {}
+      if (res.dataOne.length) {
+        res.dataOne.map(x => x.minus = !!x.minus)
+      }
+      data.cart_products = res.dataOne
+      data.increase_products = res.dataTwo
+
+      // console.log(res)
+      callback(apiResult(true, data, null))
+    })
   }
 }
-module.exports = shopBusiness
+module.exports = cartBusiness
