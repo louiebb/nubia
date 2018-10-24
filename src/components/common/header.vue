@@ -1,6 +1,6 @@
 <template>
   <div :class="data.class">
-    <mt-header :fixed="true" :title="data.title">
+    <mt-header  :title="data.title">
       <router-link to="/" slot="left">
         <font-awesome-icon :icon="data.icon.left" />
       </router-link>

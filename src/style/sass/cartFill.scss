@@ -1,4 +1,4 @@
-.cart{
+.cartFill {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,8 +7,5 @@
   }
   .container{
     background: #ccc;
-  }
-  .bottom {
-    height: 52px;
   }
 }

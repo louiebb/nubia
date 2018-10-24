@@ -1,0 +1,33 @@
+.cartNull {
+  background: yellowgreen;
+  .header {
+    .is-left {
+      flex: 1;
+      a{
+        display: block;
+        width: 179px;
+        height: 30px;
+        padding: 10px 10px;
+      }
+      span{
+        display: block;
+        height: 30px;
+        width: 140px;
+        img{
+              display: block;
+              max-height: 100%;
+              margin: 0 auto;
+        }
+      }
+
+    }
+
+    .mint-header-title {
+      flex: 0;
+    }
+
+    .is-right {
+      flex: 1;
+    }
+  }
+}

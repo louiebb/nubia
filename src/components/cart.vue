@@ -1,36 +1,24 @@
 <template>
   <div class="cart flexbox">
-    <div class="top">
-      <nub-header :data="headerData"></nub-header>
-    </div>
-    <div class="container">
-      <div class="content" style="height:1000px">
-    </div>
-    </div>
-    <div class="bottom"></div>
+    <cart-fill v-show="data.length>0"></cart-fill>
+    <cart-null v-show="data.length==0"></cart-null>
+  <div class="bottom"></div>
   </div>
 </template>
 
 <script>
-import NubHeader from './common/header'
-import '../style/sass/cart.scss'
+import CartFill from './common/cart/cartFill'
+import CartNull from './common/cart/cartNull'
+
 export default {
   name: 'cart',
   data () {
     return {
-      headerData:{
-        class:'header',
-        title:'购物车',
-        icon:{
-          left:'chevron-left',
-          right:'equals'
-        }
-      }
-
+      data:[]
     }
   },
   components:{
-    NubHeader
+    CartFill,CartNull
   }
 }
 </script>

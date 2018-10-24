@@ -12,6 +12,9 @@ body {
   overflow-x: hidden;
   height: 100%;
 }
+.bottom {
+  height: 52px;
+}
 .flexbox{
   height: 100%;
   display: flex;
@@ -35,4 +38,37 @@ img{
 a{
   text-decoration: none;
   color: black;
+}
+
+// 图标
+@font-face {
+  font-family: 'icomoon';
+  src: url('./iconfont/icomoon.ttf');
+}
+
+.icon-home:before {
+  content: "\e60b";
+}
+.icon-category:before {
+  content: "\e619";
+}
+
+.icon-discover:before {
+  content: "\e600";
+}
+.icon-cart:before {
+  content: "\e606";
+}
+.icon-user:before {
+  content: "\e605";
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }

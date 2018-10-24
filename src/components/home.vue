@@ -4,13 +4,14 @@
       <div class="header-home">
         <div class="left">
           <a href="#" :title="shopname" class="logo">
-            <span><img src="https://static.nubia.cn/mobile/images/m-logo.png" style="width: 100%;"></span>
+            <span><img src="https://static.nubia.cn/mobile/images/m_logo.png" style="width: 100%;"></span>
           </a>
         </div>
         <div class="tit"></div>
         <div class="right">
           <a href="/account" class="login login-in">
-          <font-awesome-icon  icon="user" />
+          <!-- <font-awesome-icon  icon="user" /> -->
+            <span class="icon icon-user"></span>
           </a>
         </div>
       </div>

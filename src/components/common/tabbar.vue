@@ -4,7 +4,8 @@
     <!-- <img slot="icon" src="../../assets/100x100.png"> -->
     <div class="icon">
        <router-link :to="tab.link" slot="icon" tag="span" class="iconfont">
-        <font-awesome-icon  :icon="tab.iconfont" />
+        <!-- <font-awesome-icon  :icon="tab.iconfont" /> -->
+        <span :class="'icon icon-'+tab.key"></span>
        </router-link>
     </div>
     {{tab.value}}

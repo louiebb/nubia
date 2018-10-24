@@ -9,12 +9,13 @@
 export default {
   name: 'mytemp',
   data () {
-      msg:'mytemp'
+      return{
+        msg:'mytemp'
+      }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>
