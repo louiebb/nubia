@@ -13,7 +13,7 @@
 </template>
 
 <script>
-// import '../../style/sass/tab.scss'
+import '../../style/sass/tab.scss'
 export default {
   name: 'tabbar',
   data () {
@@ -54,23 +54,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.tabbar {
-  max-width: 720px;
-  margin: 0px auto;
-  z-index: 999;
-  background: #f4f3ef;
-  height: 1.386rem;
-  margin: 0 auto;
-  div.mint-tab-item-label{
-    height: 100%;
-  }
-}
 
-.icon {
-  display: block;
-  font-size: .666rem;
-  text-align: center;
-  height: .75rem;
-  line-height: .75rem;
-}
 </style>
