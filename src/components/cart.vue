@@ -1,24 +1,24 @@
 <template>
   <div class="cart flexbox">
     <cart-fill v-show="data.length>0"></cart-fill>
-    <cart-null v-show="data.length==0"></cart-null>
+    <cart-empty v-show="data.length==0"></cart-empty>
   <div class="bottom"></div>
   </div>
 </template>
 
 <script>
 import CartFill from './common/cart/cartFill'
-import CartNull from './common/cart/cartNull'
+import CartEmpty from './common/cart/cartEmpty'
 
 export default {
   name: 'cart',
   data () {
     return {
-      data:[]
+      data:[1]
     }
   },
   components:{
-    CartFill,CartNull
+    CartFill,CartEmpty
   }
 }
 </script>

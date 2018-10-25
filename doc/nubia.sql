@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-10-23 20:42:38
+Date: 2018-10-25 11:43:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -128,6 +128,29 @@ INSERT INTO `category` VALUES ('8', '508', '508', '2018-10-19 21:51:27');
 INSERT INTO `category` VALUES ('9', '509', '509', '2018-10-19 21:51:41');
 
 -- ----------------------------
+-- Table structure for increase_products
+-- ----------------------------
+DROP TABLE IF EXISTS `increase_products`;
+CREATE TABLE `increase_products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `promotion_id` int(11) DEFAULT NULL,
+  `promotion_desc` varchar(255) DEFAULT NULL,
+  `default_image` varchar(255) DEFAULT NULL,
+  `product_id` int(11) DEFAULT NULL,
+  `product_name` varchar(255) DEFAULT NULL,
+  `choose_spec_id` int(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of increase_products
+-- ----------------------------
+INSERT INTO `increase_products` VALUES ('1', '671', '圈铁耳机', 'produc/146711226614.png', '554', '努比亚圈铁耳机', '0');
+INSERT INTO `increase_products` VALUES ('2', '672', '蓝牙耳机', 'produc/149637093487.jpg', '642', '努比亚蓝牙耳机', '0');
+INSERT INTO `increase_products` VALUES ('3', '673', '炫美自拍杆', 'produc/148350884768.png', '575', '努比亚炫美自拍杆', '0');
+INSERT INTO `increase_products` VALUES ('4', '674', '便携移动电源', 'produc/152118927962.jpg', '700', '便携移动电源', '0');
+
+-- ----------------------------
 -- Table structure for order
 -- ----------------------------
 DROP TABLE IF EXISTS `order`;
@@ -154,6 +177,7 @@ INSERT INTO `order` VALUES ('6', '3', '6');
 DROP TABLE IF EXISTS `shoplist`;
 CREATE TABLE `shoplist` (
   `id` int(11) NOT NULL,
+  `product_id` int(11) DEFAULT NULL,
   `cate_id` int(11) DEFAULT NULL,
   `title` varchar(50) DEFAULT NULL,
   `sub_title` varchar(100) DEFAULT NULL,
@@ -172,24 +196,50 @@ CREATE TABLE `shoplist` (
 -- ----------------------------
 -- Records of shoplist
 -- ----------------------------
-INSERT INTO `shoplist` VALUES ('1238', '501', 'z18抢购9.18', '', '5', '', 'blockimage/153933641050.jpg', '', 'https://m.nubia.com/nubiaz18/black8gb128gb', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1247', '502', 'z18手机', '', '5', '', 'blockimage/153726703712.jpg', '', 'https://m.nubia.com/nubiaz18/black6gb64gb', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1248', '503', '红魔', '', '5', '', 'blockimage/153726709889.jpg', '', 'https://m.nubia.com/nubiaredmagic/red8gb128gb', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1249', '504', 'z17mini', '', '5', '', 'blockimage/153726716198.jpg', '', 'https://m.nubia.com/nubiaz17mini/whitegold6g', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1250', '505', '努比亚二合一数据线', '', '5', '', 'blockimage/153733887722.jpg', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('584', '505', '红魔电竞游戏耳机', '', '5', '', 'blockimage/15254240264.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('625', '505', 'Z18mini清水套', '', '5', '', 'blockimage/152542395951.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1253', '505', '圈铁耳机', '', '5', '', 'blockimage/153734173619.jpg', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('714', '505', '努比亚红魔游戏T恤', '', '5', '', 'blockimage/152542388343.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('626', '505', 'Type-C数据线', '', '5', '', 'blockimage/149205402555.jpg', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1271', '501', '红魔6+64直降200', '', '5', '', 'blockimage/153984253670.jpg', '', 'https://m.nubia.com/nubiaredmagic/black6gb64gb', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1262', '501', 'Z18梵高星空典藏版抢购', '', '5', '', 'blockimage/153785732914.jpg', '', 'https://m.nubia.com/nubiaz18/sky8gb128gb', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1226', '506', '红魔电竞游戏手机', '<span style=\"color:#FF4D4D\">不红魔不成活</span>', '5', '', 'blockimage/153674260887.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1225', '506', 'Z18mini', '<span style=\"color:#FF4D4D\">2400万双摄</span>', '5', '', 'blockimage/153674246273.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1039', '506', 'Z17S', '<span style=\"color:#FF4D4D\">无边框全面屏</span>', '5', '', 'blockimage/152341451538.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('796', '506', 'Z17曜石黑', '<span style=\"color:#FF4D4D\">骁龙835处理器</span>', '5', '', 'blockimage/151746296957.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1005', '506', 'V18 曜石黑', '<span style=\"color:#FF4D4D\">充一次，用两天</span>', '5', '', 'blockimage/152341321867.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('797', '506', 'Z17烈焰红', '<span style=\"color:#FF4D4D\">1200�?2300万双摄</span>', '5', '', 'blockimage/151746301180.png', '', '', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('876', '507', 'V18', '', '5', '', 'blockimage/153663589182.jpg', '', 'https://m.nubia.com/nubiav18/red4gb64gb', '1', '', '0', '0');
-INSERT INTO `shoplist` VALUES ('1254', '508', 'nubia 电源适配器（快充3.0）', '', '5', '', 'blockimage/153734644757.jpg', '', 'https://m.nubia.com/product/470/1020', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1238', null, '501', 'z18抢购9.18', '', '5', '', 'blockimage/153933641050.jpg', '', 'https://m.nubia.com/nubiaz18/black8gb128gb', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1247', null, '502', 'z18手机', '', '5', '', 'blockimage/153726703712.jpg', '', 'https://m.nubia.com/nubiaz18/black6gb64gb', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1248', null, '503', '红魔', '', '5', '', 'blockimage/153726709889.jpg', '', 'https://m.nubia.com/nubiaredmagic/red8gb128gb', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1249', null, '504', 'z17mini', '', '5', '', 'blockimage/153726716198.jpg', '', 'https://m.nubia.com/nubiaz17mini/whitegold6g', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1250', null, '505', '努比亚二合一数据线', '', '5', '', 'blockimage/153733887722.jpg', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('584', null, '505', '红魔电竞游戏耳机', '', '5', '', 'blockimage/15254240264.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('625', null, '505', 'Z18mini清水套', '', '5', '', 'blockimage/152542395951.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1253', null, '505', '圈铁耳机', '', '5', '', 'blockimage/153734173619.jpg', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('714', null, '505', '努比亚红魔游戏T恤', '', '5', '', 'blockimage/152542388343.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('626', null, '505', 'Type-C数据线', '', '5', '', 'blockimage/149205402555.jpg', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1271', null, '501', '红魔6+64直降200', '', '5', '', 'blockimage/153984253670.jpg', '', 'https://m.nubia.com/nubiaredmagic/black6gb64gb', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1262', null, '501', 'Z18梵高星空典藏版抢购', '', '5', '', 'blockimage/153785732914.jpg', '', 'https://m.nubia.com/nubiaz18/sky8gb128gb', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1226', '1035', '506', '红魔电竞游戏手机', '<span style=\"color:#FF4D4D\">不红魔不成活</span>', '5', '', 'blockimage/153674260887.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1225', null, '506', 'Z18mini', '<span style=\"color:#FF4D4D\">2400万双摄</span>', '5', '', 'blockimage/153674246273.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1039', null, '506', 'Z17S', '<span style=\"color:#FF4D4D\">无边框全面屏</span>', '5', '', 'blockimage/152341451538.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('796', null, '506', 'Z17曜石黑', '<span style=\"color:#FF4D4D\">骁龙835处理器</span>', '5', '', 'blockimage/151746296957.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1005', null, '506', 'V18 曜石黑', '<span style=\"color:#FF4D4D\">充一次，用两天</span>', '5', '', 'blockimage/152341321867.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('797', null, '506', 'Z17烈焰红', '<span style=\"color:#FF4D4D\">1200�?2300万双摄</span>', '5', '', 'blockimage/151746301180.png', '', '', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('876', null, '507', 'V18', '', '5', '', 'blockimage/153663589182.jpg', '', 'https://m.nubia.com/nubiav18/red4gb64gb', '1', '', '0', '0');
+INSERT INTO `shoplist` VALUES ('1254', null, '508', 'nubia 电源适配器（快充3.0）', '', '5', '', 'blockimage/153734644757.jpg', '', 'https://m.nubia.com/product/470/1020', '1', '', '0', '0');
+
+-- ----------------------------
+-- Table structure for spec_infos
+-- ----------------------------
+DROP TABLE IF EXISTS `spec_infos`;
+CREATE TABLE `spec_infos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `spec_id` int(11) DEFAULT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `original_price` decimal(10,2) DEFAULT NULL,
+  `color_name` varchar(255) DEFAULT NULL,
+  `spec_value` varchar(255) DEFAULT NULL,
+  `image_id` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `stock` tinyint(1) DEFAULT NULL,
+  `promotion_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of spec_infos
+-- ----------------------------
+INSERT INTO `spec_infos` VALUES ('1', '750', '80.00', '99.00', '红色', '', 'pic/147747102535.jpg', '/product/s/750', '1', '671');
+INSERT INTO `spec_infos` VALUES ('2', '915', '69.00', '79.00', '黑色', '', 'pic/150103807291.jpg', '/product/s/915', '1', '672');
+INSERT INTO `spec_infos` VALUES ('3', '785', '29.00', '49.00', '白金', '', 'pic/148524162779.png', '/product/s/785', '1', '673');
+INSERT INTO `spec_infos` VALUES ('4', '972', '89.00', '129.00', '灰白', '', 'pic/152118859076.jpg', '/product/s/972', '1', '674');
 SET FOREIGN_KEY_CHECKS=1;

@@ -33,15 +33,15 @@ let DB = {
       callback(apiResult(true, x, null))
     })
   },
-  map: function (sqlshop, sqlblock, callback) {
+  map: function (sqlone, sqltwo, callback) {
     async.series({
-      shoplist: function (cb) {
-        conn(sqlshop).then(x => {
+      dataOne: function (cb) {
+        conn(sqlone).then(x => {
           cb(null, x)
         })
       },
-      block: function (cb) {
-        conn(sqlblock).then(x => {
+      dataTwo: function (cb) {
+        conn(sqltwo).then(x => {
           cb(null, x)
         })
       }

@@ -3,8 +3,9 @@ var app = express()
 
 var businessRouter = require('./businessRouter.js')
 var accountRouter = require('./accountRouter.js')
+var cartRouter = require('./cartRouter.js')
 var comrouter = require('./commonRouter.js')
-var routers = Object.assign({}, businessRouter, comrouter, accountRouter)
+var routers = Object.assign({}, businessRouter, comrouter, accountRouter, cartRouter)
 module.exports = {
   start: function (port) {
     app.all('*', function (req, res, next) {
@@ -28,6 +29,8 @@ module.exports = {
     routers.Shop(app)
     // 用户
     routers.Account(app)
+    // 购物车
+    routers.Cart(app)
     // 公共
     routers.Comm(app)
   }
