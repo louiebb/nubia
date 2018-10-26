@@ -1,0 +1,28 @@
+.tabbar {
+  max-width: 720px;
+  margin: 0px auto;
+  z-index: 999;
+  height: 52px;
+  margin: 0 auto;
+  &.mint-tabbar{
+  background: #f4f3ef;
+  }
+  &.mint-tabbar a.is-selected {
+    color: #f05d4b;
+    background: none;
+  }
+
+  div.mint-tab-item-label {
+    height: 100%;
+  }
+
+  .icon {
+    display: block;
+    font-size: .7rem;
+    text-align: center;
+    height: .75rem;
+    line-height: .75rem;
+  }
+}
+
+

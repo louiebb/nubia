@@ -1,10 +1,11 @@
 <template>
-  <mt-tabbar class="tabbar" v-model="selected">
+  <mt-tabbar :fixed="true" class="tabbar" v-model="selected">
   <mt-tab-item :id="tab.key" :key="tab.key" v-for="tab in tabs">
     <!-- <img slot="icon" src="../../assets/100x100.png"> -->
     <div class="icon">
        <router-link :to="tab.link" slot="icon" tag="span" class="iconfont">
-        <font-awesome-icon  :icon="tab.iconfont" />
+        <!-- <font-awesome-icon  :icon="tab.iconfont" /> -->
+        <span :class="'icon icon-'+tab.key"></span>
        </router-link>
     </div>
     {{tab.value}}
@@ -13,7 +14,7 @@
 </template>
 
 <script>
-// import '../../style/sass/tab.scss'
+import '../../style/sass/tab.scss'
 export default {
   name: 'tabbar',
   data () {
@@ -54,21 +55,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.tabbar {
-  z-index: 999;
-  background: #f4f3ef;
-  height: 1.386rem;
-  margin: 0 auto;
-  div.mint-tab-item-label{
-    height: 100%;
-  }
-}
 
-.icon {
-  display: block;
-  font-size: .666rem;
-  text-align: center;
-  height: .853rem;
-  line-height: .8rem;
-}
 </style>

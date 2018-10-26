@@ -1,0 +1,46 @@
+[
+  {
+    "spec_id": 750,
+    "price": 80,
+    "original_price": 99.00,
+    "color_name": "红色",
+    "spec_value": "",
+    "image_id": "pic/147747102535.jpg",
+    "url": "/product/s/750",
+    "stock": 1,
+    "promotion_id": 671
+  },
+  {
+    "spec_id": 915,
+    "price": 69,
+    "original_price": 79.00,
+    "color_name": "黑色",
+    "spec_value": "",
+    "image_id": "pic/150103807291.jpg",
+    "url": "/product/s/915",
+    "stock": 1,
+    "promotion_id": 672
+  },
+  {
+    "spec_id": 785,
+    "price": 29,
+    "original_price": 49.00,
+    "color_name": "白金",
+    "spec_value": "",
+    "image_id": "pic/148524162779.png",
+    "url": "/product/s/785",
+    "stock": 1,
+    "promotion_id": 673
+  },
+  {
+    "spec_id": 972,
+    "price": 89,
+    "original_price": 129.00,
+    "color_name": "灰白",
+    "spec_value": "",
+    "image_id": "pic/152118859076.jpg",
+    "url": "/product/s/972",
+    "stock": 1,
+    "promotion_id": 674
+  }
+]

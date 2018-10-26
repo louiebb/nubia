@@ -1,0 +1,82 @@
+.goodDetail{
+    .mint-header {
+        height: 1.6rem;
+        background-color: #fff;
+        color: #464646;
+        font-size: .69rem;
+      } 
+    .iconcart{
+        margin-right:.38rem;
+    }
+    .xiangqingtu{
+        height:9.5rem;
+    }
+    .xiangqingtu img{
+        width: 90%;
+        height: 90%;
+        display: block;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+    .jianxi{
+        height:4px;
+        background-color:#eeeeee;
+    }
+    .details{
+        padding:10px;
+    }
+    .detail-title{
+        font-size:.5rem;
+        
+    }
+    .detail-title .last-icon{
+        float:right;
+        margin-right:6px;
+    }
+    .detail-jiangjia{
+        margin-top:.5rem;
+    }
+    .jiaqian{
+        font-size:.5rem;
+        margin-top:10px;
+    }
+    .cuxiao{
+        font-size:.48rem;
+        margin-top:28px;
+        padding-bottom:8px;
+        .zeng{
+            border:1px solid rgb(255, 77, 77);
+            color:rgb(255, 77, 77);
+            margin:7px;
+            display:inline-block;
+            padding:3px;
+        }
+        span{
+            
+            font-size:13px;
+            
+        }
+    }
+    .jianxi-zeng{
+        height:1px;
+        background-color:#eeeeee;
+    }
+    .address{
+        font-size:14px;
+        .songzhi{
+            padding-top:3px;
+            color:#000;
+        }
+        .choose-right{
+            float:right;
+        }
+        .xianhuo{
+            color:#FF4D4D;
+        }
+        .good-color{
+                margin-top:8px;
+                
+            }
+    }
+
+}

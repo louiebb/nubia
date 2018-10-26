@@ -1,0 +1,31 @@
+[
+  {
+    "promotion_id": 671,
+    "promotion_desc": "圈铁耳机",
+    "default_image": "produc/146711226614.png",
+    "product_id": 554,
+    "product_name": "努比亚圈铁耳机",
+    "choose_spec_id": 0
+  }, {
+    "promotion_id": 672,
+    "promotion_desc": "蓝牙耳机",
+    "default_image": "produc/149637093487.jpg",
+    "product_id": 642,
+    "product_name": "努比亚蓝牙耳机",
+    "choose_spec_id": 0
+  }, {
+    "promotion_id": 673,
+    "promotion_desc": "炫美自拍杆",
+    "default_image": "produc/148350884768.png",
+    "product_id": 575,
+    "product_name": "努比亚炫美自拍杆",
+    "choose_spec_id": 0
+  }, {
+    "promotion_id": 674,
+    "promotion_desc": "便携移动电源",
+    "default_image": "produc/152118927962.jpg",
+    "product_id": 700,
+    "product_name": "便携移动电源",
+    "choose_spec_id": 0
+  }
+]

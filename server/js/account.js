@@ -2,28 +2,21 @@ let db = require('../sql/mysqlDB.js')
 let md5 = require('../modules/md5.js')
 let async = require('async')
 // 日期格式化
-// let dateutils = require('date-utils')
+let dateutils = require('date-utils')
 
 // 路由映射表
 // 路由映射规则
 
-let usertable = 't_user'
+let accountTable = 'account'
+let roleTable = 'role'
 
-let userBusiness = {
-  register: function (data, callback) {
-    db.insert('userlist', data, function (result) {
-      callback(result)
-    })
-    // connect db
-    // register
-    // return result
-  },
+let accountBusiness = {
   logindo: function (id, cb) {
     let date = new Date()
     let token = md5(date.getTime().toString())
     date.setUTCDate(date.getUTCDate() + 7)
     let exprietime = date.toFormat('YYYY-MM-DD HH24:MI:SS')
-    let sql = `update ${usertable} set token = '${token}' , expire = '${exprietime}'  where id =  ${id}`
+    let sql = `update ${accountTable} set token = '${token}' , expire = '${exprietime}'  where id =  ${id}`
     db.common(sql, function (res) {
       res = JSON.parse(res)
       if (res.status) {
@@ -32,8 +25,9 @@ let userBusiness = {
     })
     // console.log(111,token,exprietime)
   },
-  userexist: function (condition, cb) {
-    let sql = `select * from ${usertable} where ${condition}`
+  // 用户是否存在
+  accountexist: function (condition, cb) {
+    let sql = `select * from ${accountTable} where ${condition}`
     db.common(sql, (res) => {
       res = JSON.parse(res)
       if (res.status) {
@@ -47,19 +41,21 @@ let userBusiness = {
       }
     })
   },
+  // 登录
   login: function (data, callback) {
     let condition = data.where.map(x => ` ${x.f} ${x.o} '${x.v}' `).join('and')
-    this.userexist(condition, function () {
-      let sql = `select * from ${usertable} where ${condition}`
-      console.log(sql)
+    // 判断是否存在
+    this.accountexist(condition, function () {
+      let sql = `select * from ${accountTable} where ${condition}`
       db.common(sql, function (res) {
         callback(res)
       })
     })
   },
+  // 根据条件查询用户
   selectByCondition: function (data, callback) {
     let condition = 'and' + data.where.map(x => ` ${x.f} ${x.o} '${x.v}' `).join('and')
-    let sql = `select * from ${usertable} where 1=1 ${condition}`
+    let sql = `select * from ${accountTable} where 1=1 ${condition}`
     //  console.log(sql);
     db.common(sql, function (res) {
       callback(res)
@@ -67,22 +63,24 @@ let userBusiness = {
   },
   pageselect: function (data, callback) {
     let condition = 'and' + data.where.map(x => ` ${x.f} ${x.o} '${x.v}' `).join('and')
-    let sql = `select * from ${usertable} where 1=1 ${condition} limit ${(data.pageNo - 1) * data.qty} , ${data.qty}`
+    let sql = `select * from ${accountTable} where 1=1 ${condition} limit ${(data.pageNo - 1) * data.qty} , ${data.qty}`
     //  console.log(sql);
 
-    let sql2 = `select count(*) as total  from ${usertable} where 1=1 ${condition}`
+    let sql2 = `select count(*) as total  from ${accountTable} where 1=1 ${condition}`
     db.pageselect(sql, sql2, function (res) {
       callback(res)
     })
   },
+  // 根据id删除用户
   deletebyid: function (data, callback) {
     let where = data.where
     let condition = `${where.f} ${where.o} '${where.v}' `
-    let sql = `delete from ${usertable} where ${condition}`
+    let sql = `delete from ${accountTable} where ${condition}`
     db.common(sql, function (res) {
       callback(res)
     })
   },
+  // 多选删除（传入id数组）
   deleteSelect: (data, callback) => {
     let idarr = JSON.parse(data.where)
     let doarr = []
@@ -99,12 +97,14 @@ let userBusiness = {
       console.log('results', results)
     })
   },
+  // 特殊删除用于多选
   deleteid (id, cb) {
-    let sql = `delete from ${usertable} where id = ${id}`
+    let sql = `delete from ${accountTable} where id = ${id}`
     db.common(sql, function (res) {
       cb(res)
     })
   },
+  // 根据id更新
   updatebyid: function (data, callback) {
     let valarr = []
     let currdata = data.values
@@ -120,14 +120,15 @@ let userBusiness = {
       })
     }
     let condition = valarr.map(x => ` ${x.f} = '${x.v}' `).join(',')
-    let sql = `update ${usertable} set ${condition} where ${data.where.f} ${data.where.o} '${data.where.v}'`
+    let sql = `update ${accountTable} set ${condition} where ${data.where.f} ${data.where.o} '${data.where.v}'`
     console.log(1111, sql)
 
     db.common(sql, function (res) {
       callback(res)
     })
   },
-  add: function (data, callback) {
+  // 注册
+  register: function (data, callback) {
     let values = data.values
     let farr = []
     let varr = []
@@ -137,17 +138,18 @@ let userBusiness = {
     }
     farr = farr.join(',')
     varr = varr.join(',')
-    let sql = `INSERT INTO ${usertable} (${farr}) VALUE (${varr})`
+    let sql = `INSERT INTO ${accountTable} (${farr}) VALUE (${varr})`
     db.common(sql, function (res) {
       callback(res)
     })
   },
-  userrole (cb) {
-    let sql = `select * from t_role `
+  // 角色表
+  accountrole (cb) {
+    let sql = `select * from ${roleTable} `
     db.common(sql, function (res) {
       cb(res)
     })
   }
 }
 
-module.exports = userBusiness
+module.exports = accountBusiness

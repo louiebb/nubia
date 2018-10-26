@@ -2,9 +2,10 @@ var express = require('express')
 var app = express()
 
 var businessRouter = require('./businessRouter.js')
-var userRouter = require('./userRouter.js')
+var accountRouter = require('./accountRouter.js')
+var cartRouter = require('./cartRouter.js')
 var comrouter = require('./commonRouter.js')
-var routers = Object.assign({}, businessRouter, comrouter, userRouter)
+var routers = Object.assign({}, businessRouter, comrouter, accountRouter, cartRouter)
 module.exports = {
   start: function (port) {
     app.all('*', function (req, res, next) {
@@ -24,8 +25,13 @@ module.exports = {
       }
     })
     app.listen(port, '0.0.0.0')
+    // 商品
     routers.Shop(app)
-    routers.User(app)
+    // 用户
+    routers.Account(app)
+    // 购物车
+    routers.Cart(app)
+    // 公共
     routers.Comm(app)
   }
 }
