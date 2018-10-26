@@ -1,7 +1,7 @@
 <template>
   <div class="user" >
-    <router-link to="/login" >
-        <mt-button type="default" @click.native="loginPage">user</mt-button>
+    <router-link :to="{name: 'login'}">
+      <mt-button type="default">{{msg}}</mt-button>
     </router-link>
     <router-view/>
   </div>
@@ -12,13 +12,10 @@
 export default {
   name: 'user',
   methods: {
-    loginPage () {
-      this.$router.push('/user/login')
-    }
   },
   data () {
     return {
-      msg: 'user'
+      msg: '登录'
     }
   }
 }
