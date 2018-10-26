@@ -16,7 +16,11 @@
     <div class="gallery"></div>
     <div class="advertisement"></div>
     <div class="list phone"></div>
-    <div class="list other"></div>
+    <div class="list other">
+          <router-link :to="{name: 'accessory'}">
+            <mt-button type="default"><span>查看更多配件</span></mt-button>
+          </router-link>
+    </div>
   </div>
 </template>
 <script>

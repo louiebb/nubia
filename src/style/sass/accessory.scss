@@ -1,0 +1,59 @@
+#app{
+    display: flex;box-sizing:border-box;flex-direction:column;
+    .accessory{
+      flex:1;display: flex;box-sizing:border-box;flex-direction:column;background-color:#ccc;
+      .nav{
+        .mint-header {
+              height: 1.6rem;
+              background-color: #fff;
+              color: #464646;
+              font-size: .69rem;   
+        } 
+          
+        
+        .mint-navbar{
+          margin:2px 0 6px 0 ;
+           background-color:#fff;
+            height:52px; line-height: 52px;
+            .mint-tab-item{
+              font-size:16px;
+            }
+            .caret-down{
+              font-size:12px;
+            }
+            .price-arrow{
+              font-size:2px;width:8px;
+            }
+        }
+            
+      }
+
+      .main{
+         
+          flex:1;overflow-x:hidden;
+          .main_pic{
+            
+            display:flex;justify-content:space-between;flex-wrap: wrap;
+            .ass_img{
+              margin:2px;background-color:#fff;
+              img{
+                width:182px;height:180px;
+              }
+              .info p {
+                text-align: center;
+              }
+            }
+            
+          }
+      }
+    }
+    .blank{
+              height:52px; margin-top:2px;background-color:#fff;
+            }
+    .tabbar{
+      height: 1.386rem;
+    }
+   
+
+    
+}
