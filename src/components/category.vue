@@ -2,10 +2,12 @@
   <div class="category">
     <mt-header title="商品">
       <router-link to="/" slot="left">
-        <font-awesome-icon icon="chevron-left" />
+        <!-- <font-awesome-icon icon="chevron-left" /> -->
+            <span class="icon icon-back"></span>
+
       </router-link>
       <router-link to="/" slot="right">
-        <font-awesome-icon icon="equals" />
+        <span class="icon icon-menu"></span>
       </router-link>
     </mt-header >
     <!-- 红魔竞技手机 -->

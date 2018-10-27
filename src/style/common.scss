@@ -62,6 +62,15 @@ a{
 .icon-user:before {
   content: "\e605";
 }
+.icon-back:before {
+  content: "\e618";
+}
+.icon-menu:before {
+  content: "\e603";
+}
+.icon-cart:before {
+  content: "\e606";
+}
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: 'icomoon' !important;
