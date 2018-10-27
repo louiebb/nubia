@@ -13,35 +13,43 @@ export default new Router({
   routes: [{
     path: '/',
     name: 'H',
-    component: Home
+    component: Home,
+    meta: { keepAlive: false }
   }, {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: { keepAlive: false }
   }, {
     path: '/category',
     name: 'category',
-    component: Category
+    component: Category,
+    meta: { keepAlive: true }
   }, {
     path: '/discover',
     name: 'discover',
-    component: Discover
+    component: Discover,
+    meta: { keepAlive: true }
   }, {
     path: '/cart',
     name: 'cart',
-    component: Cart
+    component: Cart,
+    meta: { keepAlive: true }
   }, {
     path: '/user',
     name: 'user',
     component: User,
+    meta: { keepAlive: true },
     children: [{
       path: '/login',
       name: 'login',
-      component: Login
+      component: Login,
+      meta: { keepAlive: true }
     }]
   }, {
     path: '/goodDetail',
     name: 'goodDetail',
-    component: GoodDetail
+    component: GoodDetail,
+    meta: { keepAlive: true }
   }]
 })

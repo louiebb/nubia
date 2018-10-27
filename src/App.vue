@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <router-view/>
-    <tab-bar></tab-bar>
+    <!-- 是否保持离开时的状态 -->
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
+     <tab-bar></tab-bar>
   </div>
 </template>
 
@@ -17,11 +21,10 @@ export default {
 </script>
 
 <style>
-
 #app {
   max-width: 720px;
   margin: 0px auto;
   height: 100%;
-  font-family: "Microsoft Yahei","微软雅黑",Arial,Helvetica,sans-serif;
+  font-family: 'Microsoft Yahei', '微软雅黑', Arial, Helvetica, sans-serif;
 }
 </style>
